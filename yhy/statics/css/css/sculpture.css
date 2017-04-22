@@ -1,0 +1,268 @@
+
+body{
+    font-family: "微软雅黑";
+    margin: 0;
+    padding: 0;
+    color: #333333;
+    font-size: 16px;
+    overflow-x: hidden;
+}
+
+img{
+    border: 0;
+}
+
+ul,a,li,dt,dd,p,span,h1,h2,h3,h4,h5,h6{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+/*三级页面小亲疙瘩系类 */
+
+.ycw-content{
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+
+/*面包屑*/
+.ycw-content .bread{
+    width: auto;
+    height: 18px;
+    /*background: red;*/
+
+}
+
+.ycw-content .bread>li{
+    float: left;
+}
+
+.ycw-content .bread li .round{
+    display:block;
+    width: 10px;
+    height: 10px;
+    float: left;
+    border-radius: 50%;
+    margin: 4px 10px;
+    background: #1C9BF2;
+}
+
+.ycw-content .bread li a{
+    color: #333333;
+    font-size: 18px;
+}
+
+
+/*小亲疙瘩少年泥人标题*/
+
+.ycw-content .title-box{
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 60px;
+    text-align: center;
+
+}
+.ycw-content .title-box h3{
+    text-align: center;
+    font-size: 30px;
+    font-weight: normal;
+}
+.ycw-content .title-box h4{
+    margin-top: 6px;
+    line-height: 18px;
+    font-weight: normal;
+
+}
+.ycw-content .title-box h4 strong{
+    color: #57a6ef;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+/*小亲疙瘩少年泥人图片 */
+
+.ycw-content .img-box{
+    width: 1200px;
+    height: 462px;
+    margin: 0 auto;
+    margin-top: 90px;
+}
+.ycw-content .img-box li{
+    width: 326px;
+    height: 100%;
+    float: left;
+    margin-right: 111px;
+    position: relative;
+
+}
+.ycw-content .img-box li:nth-child(3){
+    margin-right: 0;
+}
+
+.ycw-content .img-box li span{
+    width: 100%;
+    height: 306px;
+    position: absolute;
+    bottom: -20px;
+    background:#F3F8FB;
+    display: block;
+    text-align: center;
+}
+.ycw-content .img-box li img{
+    position: absolute;
+    left: 55px;
+    z-index: 99999;
+}
+
+
+/*文本内容*/
+.ycw-content .text{
+    width: 1200px;
+    margin: 90px  auto 0;
+    /*margin-top: 90px;*/
+    height: auto;
+}
+
+.ycw-content .text p{
+    line-height: 30px;
+}
+.ycw-content .text p:nth-child(1){
+    padding-bottom: 78px;
+}
+.ycw-content .text p:nth-child(2){
+    padding-bottom: 44px;
+}
+.ycw-content .text p:nth-child(3){
+    padding-bottom: 106px;
+}
+/*文本图片*/
+.ycw-content .text  .text-img{
+    width: 1200px;
+    height: auto;
+}
+
+
+/*亲疙瘩泥人系类 banner*/
+
+.ycw-banner{
+    width: 1200px;
+    height: auto;
+    margin:  0 auto;
+    margin-top: 169px;
+}
+.ycw-banner .title-left{
+    height: 40px;
+    width: auto;
+
+}
+.ycw-banner h3{
+    line-height: 16px;
+    color:#57A6EF;
+    font-weight: 700;
+    position: relative;
+}
+
+.ycw-banner h2{
+    font-size: 14px;
+    font-weight:300;
+    line-height: 26px;
+    text-transform:uppercase;
+}
+.ycw-banner h2 strong{
+    font-weight: bold;
+    font-size: 24px;
+    color: #666666;
+    font-family: sans-serif;
+
+}
+
+
+.ycw-banner .line{
+    width: 1114px;
+    height: 1px;
+    background: #57A6EF;
+    float: right;
+    /*margin-top: 7px;*/
+    position: absolute;
+    bottom: -7px;
+    right: 0;
+}
+.ycw-banner .line span{
+    width: 10px;
+    height: 10px;
+    display: block;
+    border-radius: 50%;
+    background: #57A6EF;
+    position: absolute;
+    right: 0;
+    top: -5px;
+}
+
+
+/*轮播盒子*/
+.ycw-banner .box{
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 90px;
+   overflow: visible;
+}
+.ycw-banner .luobo-dian{
+    position:absolute;
+    bottom:-90px;
+}
+.ycw-banner .luobo-dian span{
+   width:14px;
+    height:14px;
+}
+.ycw-banner .banner-box{
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+}
+.ycw-banner .img-box{
+    width: 248px;
+    height: 372px;
+    float: left;
+    border-radius: 10px;
+    border: 1px solid #D1D1D1;
+    text-align: center;
+    margin-right: 96px;
+}
+
+.ycw-banner .img-box:nth-child(3){
+    margin-right: 0;
+}
+.ycw-banner .img-box:nth-child(1){
+    margin-left: 130px;
+}
+.ycw-banner .img-box img{
+    margin-top: 46px;
+}
+.ycw-banner .img-box span{
+    font-size: 16px;
+    color: #666666;
+    display: block;
+    margin-top: 46px;
+}
+/*左右按钮*/
+.ycw-banner .prev{
+    width: 60px;
+    height: 60px;
+    display: none;
+    background: url(../../images/images/ycw/pic_left.png)no-repeat ;
+}
+.ycw-banner .next{
+    width: 60px;
+    height: 60px;
+    display: none;
+    background: url(../../images/images/ycw/pic_right.png)no-repeat ;
+}
+
+.ycw-banner:hover .prev{
+    display: block;
+}
+.ycw-banner:hover .next{
+    display: block;
+}

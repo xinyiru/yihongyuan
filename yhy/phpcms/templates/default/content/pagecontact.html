@@ -1,0 +1,11 @@
+{template "content","header"}
+{pc:get sql="SELECT * FROM v9_page where catid=15"}
+
+{loop $data $key $val}
+
+{$val[content]}
+
+{/loop}
+
+{/pc}
+{template "content","footer"}

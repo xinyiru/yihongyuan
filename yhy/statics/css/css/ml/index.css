@@ -1,0 +1,154 @@
+/*晋韵文化开始*/
+
+.container-box ul,li{
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+.container-box a{
+    margin:0;
+    padding: 0;
+}
+.container-box{
+    width:100%;
+    height:auto;
+    position: relative;
+    margin-top:80px;
+}
+.container-box .title{
+    width:1200px;
+    height:88px;
+    line-height:88px;
+    margin:0 auto;
+    text-align: center;
+
+}
+.container-box .line{
+    width:100%;
+    height: 7px;
+    background:#314A61;
+    position: absolute;
+    top:257px;
+}
+
+.container-box .title span{
+   display: inline-block;
+}
+.container-box .con{
+    width:1200px;
+    height:590px;
+    margin:0 auto;
+    position:relative;
+
+}
+.container-box .con  .con-title{
+    width:1200px;
+    height:590px;
+    margin:0 auto;
+    position:relative;
+    padding:0 76px;
+    box-sizing: border-box;
+}
+
+.container-box .con  .con-title li{
+    position: absolute;
+    margin-top:120px;
+    padding:5px;
+
+}
+.container-box .con  .con-title li:after{
+
+    content: "";
+    display: block;
+    clear: both;
+}
+.container-box .con  .con-title li a{
+    display: block;
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    background-color:#fff;
+    border:2px solid #314A61;
+    box-sizing: border-box;
+    padding:5px;
+    text-decoration: none;
+}
+.container-box .con  .con-title li a i{
+    display:block;
+    width:100%;
+    height:100%;
+    border-radius: 50%;
+    box-sizing: border-box;
+    border:1px solid #314A61;
+    text-align: center;
+    line-height:90px;
+    font-size:30px;
+    text-decoration: none;
+    color:#454545;
+    overflow: hidden;
+    font-style:normal;
+}
+.container-box .con  .con-title li a i img{
+    width:100%;
+    height:100%;
+    display: none;
+
+}
+.container-box .img-box{
+    font-size:0;
+    overflow: hidden;
+}
+.container-box .img-box img{
+   margin-bottom:-18px;
+}
+.container-box .con  .con-title li:nth-child(1){
+   left:67px;
+}
+.container-box .con  .con-title li:nth-child(2){
+    left:304px;
+}
+.container-box .con  .con-title li:nth-child(3){
+    left:544px;
+}
+.container-box .con  .con-title li:nth-child(4){
+    left:781px;
+}
+.container-box .con  .con-title li:nth-child(5){
+    left:1018px;
+}
+
+.container-box .con  .con-title li span{
+    display:inline-block;
+    width:100%;
+    height:100%;
+    text-align: center;
+     margin-top:30px;
+     font-size:0px;
+}
+.container-box .con  .con-title li:hover a{
+    transition:transform 0.5s;
+    transform:scale(2.25,2.25);
+    border-radius: 50%;
+    box-sizing: border-box;
+    border:2px solid #314A61;
+    padding:11px;
+}
+.container-box .con  .con-title li:hover i {
+    transition: transform .1s;
+    display: block;
+    transform: scale(1.125, 1.125);
+    box-sizing: border-box;
+    border-radius: 50%;
+    border: 1px solid #314a61;
+    line-height:0px;
+    font-size:0px;
+}
+.container-box .con  .con-title li:hover a i img{
+    display: block;
+}
+.container-box .con  .con-title li:hover span{
+    transition:transform .5s;
+  transform: translateY(50px);
+}
+
+/*晋韵文化结束*/

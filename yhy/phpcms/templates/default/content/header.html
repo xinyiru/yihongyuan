@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    <title>首页</title>
+    <link rel="stylesheet" href="{CSS_PATH}css/base/normalize.css">
+	<link rel="stylesheet" href="{CSS_PATH}css/zh/swiper.min.css">
+    <link rel="stylesheet" href="{CSS_PATH}css/ns-art.css">
+    <link rel="stylesheet" type="text/css" href="{CSS_PATH}css/wjz.css">
+    <link rel="stylesheet" type="text/css" href="{CSS_PATH}css/DB_tab29.css">
+    <link rel="stylesheet" href="{CSS_PATH}css/zh/index.css">
+    <link rel="stylesheet" href="{CSS_PATH}css/bzp/bzp-index.css">
+    <link rel="stylesheet" href="{CSS_PATH}css/ml/index.css">
+    <link rel="stylesheet" href="{CSS_PATH}css/brand.css">
+</head>
+<body>
+<!-- header开始 -->
+    <div class="header">
+        <div class="nav">
+        <!-- logo开始 -->
+        	<div class="logo">
+        		<a href="{siteurl($siteid)}">
+        			<img src="{IMG_PATH}images/bzp/logo.png" alt="">
+        		</a>
+        	</div>
+        <!-- logo结束 -->
+        <!-- 导航开始 -->
+        <div class="mainnav">
+        	<ul class="navcon">
+        		<li>
+        			<a href="{siteurl($siteid)}">首页</a>
+        		</li>
+                {pc:content action="category" catid="0" num="25" siteid="$siteid" order="listorder ASC"}
+                {loop $data $r}
+                <li>
+                 {if $r[catid]==9||$r[catid]==10||$r[catid]==14}
+        			<a href="javascript:;">{$r[catname]}</a>
+                    {else}
+                    <a href="{$r[url]}">{$r[catname]}</a>
+                {/if}
+        			<ul class="hiddenlist">
+                     {pc:content action="category" catid="$r[catid]" num="25" siteid="$siteid" order="listorder ASC"}
+                        {loop $data $v}
+        				<li>
+        					<i></i>
+        					<a href="{$v[url]}">{$v[catname]}</a>
+        				</li>
+                        {/loop}
+        				<!-- <li>
+        					<i></i>
+        					<a href="">最新动态</a>
+        				</li> -->
+                    {/pc}
+        			</ul>
+        		</li>
+                {/loop}
+                {/pc}
+        		<!-- <li>
+        			<a href="">晋韵文化</a>
+        			<ul class="hiddenlist">
+        				<li>
+        					<i></i>
+        					<a href="">企业简介</a>
+        				</li>
+        				<li>
+        					<i></i>
+        					<a href="">最新动态</a>
+        				</li>
+        			</ul>
+        		</li>
+        		<li>
+        			<a href="">泥塑艺术</a>
+        			<ul class="hiddenlist">
+        				<li>
+        					<i></i>
+        					<a href="">企业简介</a>
+        				</li>
+        				<li>
+        					<i></i>
+        					<a href="">最新动态</a>
+        				</li>
+        			</ul>
+        		</li>
+        		<li>
+        			<a href="">剪纸艺术</a>
+        			<ul class="hiddenlist">
+        				<li>
+        					<i></i>
+        					<a href="">企业简介</a>
+        				</li>
+        				<li>
+        					<i></i>
+        					<a href="">最新动态</a>
+        				</li>
+        			</ul>
+        		</li>
+        		<li>
+        			<a href="">园林雕塑</a>
+        			<ul class="hiddenlist">
+        				<li>
+        					<i></i>
+        					<a href="">企业简介</a>
+        				</li>
+        				<li>
+        					<i></i>
+        					<a href="">最新动态</a>
+        				</li>
+        			</ul>
+        		</li>
+        		<li>
+        			<a href="">旅游产品</a>
+        			<ul class="hiddenlist">
+        				<li>
+        					<i></i>
+        					<a href="">企业简介</a>
+        				</li>
+        				<li>
+        					<i></i>
+        					<a href="">最新动态</a>
+        				</li>
+        			</ul>
+        		</li>
+        		<li>
+        			<a href="">联系我们</a>
+        			<ul class="hiddenlist">
+        				<li>
+        					<i></i>
+        					<a href="">企业简介</a>
+        				</li>
+        				<li>
+        					<i></i>
+        					<a href="">最新动态</a>
+        				</li>
+        			</ul>
+        		</li> -->
+        	</ul>
+        </div>
+        <!-- 导航结束 -->
+        </div>
+    </div>
+<!-- header结束 -->
+
+<!-- banner开始 -->
+	<div class="banner">
+		<a href="" style="background: url({IMG_PATH}images/bzp/banner.png) no-repeat center center/cover;"></a>
+	</div>
+<!-- banner结束 -->

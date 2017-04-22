@@ -1,0 +1,85 @@
+{template "content","header"}
+<!-- 品牌介绍-最新动态 -->
+     <section>
+     	<div class="ycw-list">
+
+     		<!-- 面包屑 -->
+     		 	<ul class="bread">
+    			<li> 
+    				<span class="round"></span>
+    				<a href="{siteurl($siteid)}">首页</a>
+    			</li>
+    			<li>
+    				<span class="round"></span>
+    				<a href="{$CATEGORYS[$CAT[parentid]][url]}">{$CATEGORYS[$CAT[parentid]][catname]} </a>
+    			</li>
+    			<li>
+    				<span class="round"></span>
+    				<a href="$CAT[url]}">{$CAT[catname]}</a>
+    			</li>
+    			</ul>
+
+           <!-- 新闻列表标题 -->
+                  <div class="news-title">
+                  	  <div class="left-title"></div>
+                  	   <div class="middle-title">
+                  	   	<h3>最新动态</h3>
+                  	   	<h4>Small bumps series</h4>
+                  	   </div>
+                  	  <div class="right-title"></div>
+
+                  </div>
+
+                 <!-- 新闻列表内容  -->
+                  <div class="list-content">
+                        <!-- 内容图片 -->
+                       {pc:content  action="lists" catid="$catid" order="listorder ASC" num="5" page="$page"}
+        				{loop $data $r}
+	                  <div class="content">
+	                  	   <div class="content-img">
+	                  	   <a href="{$r[url]}">
+	                  	   	<img src="{$r[thumb]}" alt="">
+	                  	   	</a>
+	                  	   </div>
+	                  	   <!-- 新闻列表标题 -->
+	                  	   <div class="content-text">
+		                  	   <div class="top-text">
+		                  	   		<div class="top-left">{$r[keywords]}</div>
+		                  	   		<div class="top-right">
+		                  	   			<span></span>
+		                  	   			<h3>{$r[title]}</h3>
+		                  	   		</div>
+		                  	   	</div>
+		                  	   	<div class="bottom-text">
+		                  	   		<p>{$r[description]}</p>
+		                  	   		<p>{$r[yingwen]}</p>
+		                  	   		<a href="{$r[url]}"></a>
+		                  	   	</div>
+	                  	   </div>
+	                  </div>
+	                  {/loop}
+	                  	{/pc}
+                  </div>
+				<div class="nisu">
+					<div class="liebiao">
+					    <div class="yema">
+							<ul>
+								<!-- <li class="shouye ye"><a href="#">首页</a></li>
+								<li class="shouye ye"><a href="#">上一页</a></li>
+								<li class=" ye" style="border:0;background:#5f88ff;"><div class="yequan"></div><a href="#" style="color:#fff;">1</a></li>
+								<li class=" ye"><a href="#">2</a></li>
+								<li class=" ye"><a href="#">3</a></li>
+								<li class=" ye"><a href="#">4</a></li>
+								<li class=" ye">···</li>
+								<li class="shouye ye"><a href="#">下一页</a></li>
+								<li class="shouye ye"><a href="#">末页</a></li> -->
+								{$pages}
+							</ul>
+						</div>
+					</div>
+				</div>
+     	</div>
+     </section>
+
+
+{template "content","footer"}

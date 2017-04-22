@@ -1,0 +1,451 @@
+body,span,ul,li,p,a,h1,h2,h3,h4,h5,h6{
+	margin:0;
+	padding: 0;
+	list-style: none; 
+}
+/*泥塑艺术*/
+.nsys{
+	width: 100%;
+	height: auto;
+	background-color: #fff; 
+}
+.nsys .ns-box{
+	margin: 0 auto;
+	width: 1200px;
+	height: auto;
+	background: #fff;
+}
+.nsys .ns-box .top{
+	margin: 0 auto;
+	width: 378px;
+	height: 94px;
+	padding-top: 140px;
+}
+.nsys .ns-box .top .slide{
+	float: left;
+	height: 100%;
+}
+.nsys .ns-box .slide .item{
+	width: 18px;
+	height: auto;
+	font-size: 0;
+	line-height: 0;
+	color: #333333;
+	height: 96px;
+	font-family: sans-serif;
+	float: left;
+	margin-right: 52px;
+	cursor: pointer;
+}
+.nsys .ns-box .slide .item:last-child{
+	margin-right: 36px;
+}
+.nsys .ns-box .slide .item .text{
+	font-size: 18px;
+	line-height: 18px;
+	cursor: pointer;
+}
+.nsys .ns-box .slide .item .text.hot{
+	color: #459BFC;
+}
+.nsys .ns-box .top .topimg{
+	width: 184px;
+	height: 100%;
+	float: left;
+	background-image: url(../../../images/images/zh/pic_jinl.png);
+	background-position: -315px -205px;
+	background-repeat: no-repeat;
+}
+
+.nsys .ns-box .bottom{
+	margin-left: 38px;
+	margin-right: 38px;
+	box-sizing:border-box;
+	padding-top: 54px;
+	overflow: hidden;
+	position: relative;
+	height: 590px;
+}
+.nsys .ns-box .bottom:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.nsys .lunbo{
+	/*width: 100%;*/
+	height: 536px;
+	/*position: absolute;*/
+	/*display: none;*/
+	opacity: 0;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+.nsys .lunbo:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.nsys .lunbo.tab-active{
+	display: block;
+}
+.nsys .lunbo .ban1{
+	width: 1152px;
+	height: auto;
+	overflow: visible;
+}
+.nsys .lunbo .ban1 .wrapper{
+	width: 100%;
+	height: 448px;
+	position: relative;
+}
+.nsys .lunbo .ban1 .wrapper .slide{
+	display: block;
+	/*position: absolute;*/
+	/*bottom: 0;*/
+	float: left;
+	width: 258px;
+	height: 350px;
+	background-color: #F3F8FB;
+	margin-right: 30px;
+	margin-top: 98px;
+	position: relative;
+	/*display: flex;*/
+	/*justify-content:center;*/
+	/*box-sizing:border-box;*/
+	text-align: center;
+	transition:all .3s;
+	-ms-transition:all .3s;
+	-moz-transition:all .3s;
+	-webkit-transition:all .3s;
+
+}
+.nsys .lunbo .ban1 .wrapper .slide.hot:hover{
+	margin-top: 0;
+	height: 448px;
+}
+/*.nsys .lunbo .ban1 .wrapper .slide:nth-child(4n){
+	margin-right: 0;
+}*/
+.nsys .lunbo .ban1 .wrapper .slide span.t1{
+	position: absolute;
+	bottom: 26px;
+	font-size: 14px;
+	color: #8C8D8D;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+.nsys .lunbo .ban1 .wrapper .slide .img{
+	width: 172px;
+	height: 372px;
+	position: absolute;
+	display: block;
+	right: 0;
+	left: 0;
+	margin: auto;
+	bottom: 72px;
+	/*-ms-margin-bottom:142px;*/
+	transition:transform .5s;
+	-ms-transition:transform .5s;
+	-moz-transition:transform .5s;
+	-webkit-transition:transform .5s;
+}
+/* .nsys .lunbo .ban1 .wrapper .slide:hover .img{
+	transform:scale(1.1);
+	-ms-transform:scale(1.1);
+	-moz-transform:scale(1.1);
+	-webkit-transform:scale(1.1);
+} */
+.nsys .lunbo .ban1 .wrapper .slide .img img{
+	width: 100%;
+}
+.nsys .lunbo .lis{
+	width: 100%;
+	height: 94px;
+	/*  display: flex;
+		justify-content:center;
+		align-items:center;  */
+	text-align: center;
+	line-height: 94px;
+	position: absolute;
+	bottom: -94px;
+	/*background-color: red;*/
+}
+.nsys .lunbo .lis span{
+	width: 44px;
+	height: 2px;
+	background-color: #bfbfbf;
+	margin-right: 17px;
+	/*float: left; */
+	opacity: 1;
+	border-radius: 0;
+}
+.nsys .lunbo .lis span:last-child{
+	margin-right: 0;
+}
+.nsys .lunbo .lis span.swiper-pagination-bullet-active{
+	background-color: #1c9bf2;
+	opacity: 1;
+}
+
+.shiqi{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+.shiqi .xsq{
+	text-align: center;
+}
+.shiqi .xsq .img{
+	width: 194px;
+	height: 56px;
+	margin: 0 auto;
+}
+.shiqi .xsq .img img{
+	width: 100%;
+}
+.shiqi .xsq h3{
+	font-family: "微软雅黑";
+	font-size: 18px;
+	color: #6a6a6a;
+	font-weight: normal;
+	margin-top: 23px;
+	line-height: 25px;
+	margin-bottom: 11px;
+}
+.shiqi .xsq p{
+	font-family: "微软雅黑";
+	font-size: 14px;
+	color: #797979;
+	line-height: 25px;
+}
+.shiqi .xsq .chakan{
+	display: block;
+	margin: 31px auto 0;
+	width: 116px;
+	height: 44px;
+	background: url(../../../images/images/zh/button_chag.png) no-repeat center center;
+}
+.shiqi .xsq .chakan:hover{
+	background: url(../../../images/images/zh/button_xiaoguo.png) no-repeat center center;
+}
+.shiqi .sqcontent{
+	width: 1200px;
+	height: 925px;
+	margin: 0 auto;
+	position: relative;
+}
+.shiqi .sqcontent .shan{
+	width: 494px;
+	height: 91px;
+	position: absolute;
+	top: 85px;
+	left: 95px;
+	z-index: 88;
+}
+.shiqi .sqcontent .caisu{
+	position: absolute;
+	top: 175px;
+	right: 588px;
+	z-index: 99;
+}
+.shiqi .sqcontent .contain{
+	width: 100%;
+	height: 362px;
+	background-color: #efefef;
+	position: absolute;
+	top: 130px;
+	left: 352px;
+	z-index: 1;
+}
+.shiqi .sqcontent .contain .neirong{
+	width: 575px;
+	height: 100%;
+	margin-left: 265px;
+	text-align: center;
+	overflow: hidden;
+}
+.shiqi .sqcontent .contain .neirong .title{
+	margin-top: 62px;
+	margin-bottom: 23px;
+}
+.shiqi .sqcontent .contain .neirong .bigtext{
+	font-family: "微软雅黑";
+	font-size: 18px;
+	color: #6a6a6a;
+	line-height: 25px;
+}
+.shiqi .sqcontent .contain .neirong .shortext{
+	font-family: "微软雅黑";
+	font-size: 14px;
+	color: #797979;
+	font-weight: normal;
+	line-height: 25px;
+	margin-top: 15px;
+}
+.shiqi .sqcontent .shouni{
+	position: absolute;
+	top: 488px;
+	left: 611px;
+	width: 550px;
+}
+.shiqi .sqcontent .yun{
+	position: absolute;
+	left: 579px;
+	top: 460px;
+	z-index: 100;
+}
+.shiqi .sqcontent .shan1{
+	position: absolute;
+	right:56px;
+	top: 762px;
+}
+
+/*剪纸艺术*/
+.jzys .ns-box .top{
+	width: 448px;
+	padding-top: 0;
+}
+.jzys .ns-box .top .topimg{
+	background-image: url(../../../images/images/zh/pic_jinl.png);
+    background-position: -315px -96px;
+    background-repeat: no-repeat;
+}
+.jzys .ns-box .jzbottom{
+	height: 510px;
+}
+.jzys .jzlunbo{
+	height: 456px;
+}
+
+.jzys .lunbo .ban1 .wrapper{
+	height: 355px;
+}
+.jzys .lunbo .ban1 .wrapper .slide{
+	background-color: #fff;
+	margin-top: 0;
+}
+.jzys .lunbo .slide .border{
+	box-sizing:border-box;
+	border:8px solid rgb(243,248,251);
+	width: 258px;
+	height: 286px;
+	/*text-align: center;*/
+	/*vertical-align: middle;*/
+	/*line-height: 286px;*/
+	display: flex;
+	justify-content:center;
+	align-items:center;
+	transition:border-color .5s;
+	-ms-transition:border-color .5s;
+	-moz-transition:border-color .5s;
+	-webkit-transition:border-color .5s;
+}
+.jzys .lunbo .slide .border:hover{
+	border:8px solid #A0A0A0;
+}
+.jzys .lunbo .slide .border img{
+	/*vertical-align: middle;*/
+	position: relative!important;
+	bottom: 0!important;
+}
+
+/*品牌介绍*/
+.ppjs{
+	width: 100%;
+	height: auto;
+	position: relative;
+	margin-top: 92px;
+	overflow: hidden;
+}
+.ppjs .ppjs-box{
+	width: 1200px;
+	height: auto;
+	position: relative;
+	margin: 0 auto;
+
+}
+.ppjs .ppjs-box .pptitle{
+	margin: 0 auto;
+	width: 124px;
+	height: 81px;
+	
+}
+.ppjs .ppjs-box .pptitle img{
+	width: 100%;
+}
+.ppjs .introduction{
+	width: 1200px;
+	height: 490px;
+	margin: 84px auto 0;
+	position: relative;
+}
+.ppjs .introduction .bjimg{
+	position: absolute;
+	width: 984px;
+	height: 490px;
+	top: 0;
+	left: 37px;
+	z-index: 34;
+}
+.ppjs .introduction .shan{
+	width: 348px;
+	height: 64px;
+	position: absolute;
+	right: 982px;
+	top: 107px;
+	z-index: 1;
+}
+.ppjs .introduction .shan img{
+	width: 100%;
+}
+.ppjs .introduction .shan1{
+	width: 348px;
+	height: 64px;
+	position: absolute;
+	left: 943px;
+	bottom: 80px;
+	z-index: 999;
+}
+.ppjs .introduction .shan1 img{
+	width: 100%;
+}
+.ppjs .introduction .contain{
+	width: 752px;
+	height: 378px;
+	position: absolute;
+	top: 32px;
+	left: 409px;
+	background-color: #F3F8FB;
+	z-index: 99;
+	box-sizing:border-box;
+	padding-left: 56px;
+	padding-right: 56px;
+}
+
+.ppjs .introduction .contain .title{
+	font-family: "微软雅黑";
+	font-size: 30px;
+	color: #333;
+	line-height: 1.5em;
+	font-weight: normal;
+	margin-top: 50px;
+	margin-bottom: 25px;
+}
+.ppjs .introduction .contain .text{
+	font-family: "微软雅黑";
+	font-size: 14px;
+	color: #333;
+	line-height: 30px;
+}
+.ppjs .introduction .contain .more{
+	width: 12px;
+	height: 21px;
+	position: absolute;
+	left: 56px;
+	bottom: 50px;
+}
+.ppjs .introduction .contain .more img{
+	width: 100%;
+}

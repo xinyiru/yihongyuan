@@ -1,0 +1,122 @@
+{template "content","header"}
+	<section class="nisu">
+		<!-- 面包屑 -->
+		<div class="mbxie">
+			<p class="dian"></p>
+			<p><a href="{siteurl($siteid)}">首页</a></p>
+			<p class="dian"></p>
+			<p><a href="javascript:;">{$CATEGORYS[$CATEGORYS[$CAT[parentid]][parentid]][catname]}</a></p>
+			<p class="dian"></p>
+			<p><a href="javascript:;">{$CATEGORYS[$CAT[parentid]][catname]}</a></p>
+			<p class="dian"></p>
+			<p><a href="{$CAT[url]}">{$CAT[catname]}</a></p>
+		</div>
+		<!-- 标题 -->
+		<div class="nisu-h1">
+		{pc:content action="category" catid="$top_parentid" num="25" siteid="$siteid" order="listorder ASC"}
+			<ul>
+			{loop $data $r}
+				<li>
+					<a href="{$r[url]}" {if $r[catid]==$catid} style="color:#459BFC;"{/if}>{$r[catname]}</a>
+				</li>
+			{/loop}
+			</ul>
+			{/pc}
+			<img src="{IMG_PATH}/images\wjz\title_nisu1.png" alt="">
+		</div>
+		<!-- 栏目列表 -->
+		<div class="xuanxiang">
+			<div class="dianleft"></div>
+			<ul>
+			{pc:content action="category" catid="$top_parentid" num="1" siteid="$siteid" order="listorder ASC"}
+			{loop $data $r}
+		
+			{pc:content action="category" catid="$r[catid]" num="25" siteid="$siteid" order="listorder ASC"}
+						{loop $data $v}
+				
+				<li>
+					<a href="{$v[url]}" {if $v[catid]==$catid} style="color:#459BFC;" {elseif $v[catid]==$v[parentid][catid]} style="color:#459BFC;" {/if}>
+						<span  {if $v[catid]==$catid} style="color:#459BFC;"{/if}>{$v[catname]}</span><br>
+						<span  {if $v[catid]==$catid} style="color:#459BFC;"{/if}>{$v[catdir]}</span>
+					</a>
+				</li>
+		
+				{/loop}
+				{/pc}
+			{/loop}
+			{/pc}
+			</ul>
+			<div class="dianright"></div>
+		</div>
+		<!-- 轮播 -->
+		<div class="lunbo">
+			<div id="d_tab29">
+				<ul class="d_img">				 
+					<li class="d_pos1"><a href="javascript:;"><img src="{IMG_PATH}/images/wjz/zyj_list_18.png" alt=""/></a></li>
+					<li class="d_pos2"><a href="javascript:;"><img src="{IMG_PATH}/images/wjz/zyj_list_19.png" alt=""/></a></li>
+					<li class="d_pos3"><a href="javascript:;"><img src="{IMG_PATH}/images/wjz/zyj_list_20.png" alt=""/></a></li>
+					<li class="d_pos4"><a href="javascript:;"><img src="{IMG_PATH}/images/wjz/zyj_list_21.png" alt=""/></a></li>
+					<li class="d_pos5"><a href="javascript:;"><img src="{IMG_PATH}/images/wjz/zyj_list_22.png" alt=""/></a></li>
+				</ul>	
+				<ul class="d_menu"></ul>
+				<p class="d_prev"></p>
+				<p class="d_next"></p>
+			</div>
+		</div>
+		<!-- 产品列表 -->
+		<div class="liebiao">
+			<ul>
+        	{pc:content action="lists" catid="$catid" num="4" siteid="$siteid" order="listorder ASC"  moreinfo="1" page="$page"}
+        	  {loop $data $v}
+				<li class="canpin">
+					<a href="{$v[url]}">
+						<div class="top">
+							<img src="{$v[thumb]}" alt="">
+						</div>
+						<div class="bottom">
+							<h3>{$v[title]}</h3>
+							<p>{$v[description]}</p>
+						</div>
+					</a>
+				</li>
+					  {/loop}
+				{/pc}
+			</ul>
+			<!-- 页数 -->
+			<div class="yema">
+				<ul>
+					{$pages}
+				</ul>
+			</div>
+		</div>
+		<!-- 小标题 -->
+		<div class="xiaobiao">
+			<p class="zhongwen">小亲疙瘩泥人系列</p>
+			<p class="yinwen">SMALL <span>BUMPS SERIES</span></p>
+			<div class="zheng"></div>
+		</div>
+		<!-- 更多 -->
+		<div class="genduo">
+			<div class="gleft">
+				<p><span></span><a href="#">小亲疙瘩系列的造型特点</a></p>
+				<p><span></span><a href="#">小亲疙瘩系列的寓意</a></p>
+				<p><span></span><a href="#">泥人的代表产地及文化</a></p>
+				<p><span></span><a href="#">泥人的制作工艺及流程</a></p>
+			</div>
+			<div class="gleft">
+				<p><span></span><a href="#">中国传统文化----泥塑艺术</a></p>
+				<p><span></span><a href="#">面塑的工艺和传承</a></p>
+				<p><span></span><a href="#">中国还有那些民间艺术瑰宝</a></p>
+				<p><span></span><a href="#">泥人心中的泥人</a></p>
+			</div>
+		</div>
+		<div class="cgenduo">
+			<a href="#">更多
+				<img src="{IMG_PATH}/images/wjz/menu_genduog.png" alt="">
+			</a>
+		</div>
+	</section>
+{template "content","footer"}
+<script src="{JS_PATH}js/jquery.js" type="text/javascript"></script>
+<script type="text/javascript" src="{JS_PATH}js/jquery.DB_rotateRollingBanner.min.js"></script>
+<script type="text/javascript" src="{JS_PATH}js/ns-art.js"></script>

@@ -1,0 +1,46 @@
+{template "content","header"}
+<!-- 三级页面小亲疙瘩系类 -->
+		<!-- 面包屑 -->
+		<ul class="bread">
+			<li> 
+				<span class="round"></span>
+				<a href="{siteurl($siteid)}">首页</a>
+			</li>
+			<li>
+				<span class="round"></span>
+				<a href="javascript:;">{$CATEGORYS[$CAT[parentid]][catname]}</a>
+			</li>
+			<li>
+				<span class="round"></span>
+				<a href="{$CAT[url]}">{$CAT[catname]} </a>
+			</li>
+		</ul>
+    {pc:get sql="SELECT * FROM v9_page where catid=47"}
+
+	{loop $data $key $val}
+
+	{$val[content]}
+
+	{/loop}
+
+	{/pc}
+
+
+
+{template "content","footer"}
+<script>
+	      
+  var mySwiper = new Swiper ('.box', {
+    // direction: 'vertical',
+    loop: true,
+    // autoplay:1000,
+    loopedSlides:1,
+    // pagination: '.swiper-pagination',
+    // 如果需要前进后退按钮
+    mousewheelControl :false,
+    nextButton: '.swiper-button-next',
+    prevButton: '.swiper-button-prev'
+    
+  })        
+ 
+</script>
